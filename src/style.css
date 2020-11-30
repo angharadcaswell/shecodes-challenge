@@ -9,6 +9,12 @@ body {
   background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 }
 
+p {
+  text-align: center;
+  color: #5b6273;
+  opacity: 0.8;
+}
+
 .container {
   max-width: 800px;
 }
