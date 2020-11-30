@@ -1,0 +1,145 @@
+h1 {
+  font-family: "Amatic SC", cursive;
+  text-align: left;
+  color: #5b6273;
+  font-size: 70px;
+}
+
+body {
+  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+.container {
+  max-width: 800px;
+}
+
+.currentlocation {
+  padding: 20px 20px;
+  background-image: url("/raindrops.png");
+  background-size: 100%;
+  border-radius: 20px;
+  font-family: "Cantarell", sans-serif;
+  padding: 30px 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.weathertoday {
+  list-style: none;
+  margin: 0;
+  color: #fff;
+  text-align: centre;
+  background-color: rgba(201, 206, 216, 0.5);
+  border-radius: 50px;
+  padding: 20px 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.today {
+  font-size: 30px;
+  color: #5b6273;
+}
+.date {
+  font-size: 15px;
+}
+
+.weathertype {
+  font-size: 20px;
+}
+
+.todayweather {
+  list-style: none;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0;
+}
+
+.todaytemp {
+  font-size: 40px;
+  color: #5b6273;
+}
+
+.country {
+  font-size: 50px;
+  font-weight: bold;
+  color: #424242;
+}
+
+.next5days {
+  color: #5b6273;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tuesday {
+  background-color: rgba(201, 206, 216, 0.5);
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 10px;
+}
+
+.tuesday :hover {
+  background: #fff;
+  border-radius: 50px;
+}
+
+.wednesday {
+  background-color: rgba(201, 206, 216, 0.5);
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 10px;
+}
+.wednesday :hover {
+  background: #fff;
+  border-radius: 50px;
+}
+
+.thursday {
+  background-color: rgba(201, 206, 216, 0.5);
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 10px;
+}
+
+.thursday :hover {
+  background: #fff;
+  border-radius: 50px;
+}
+
+.friday {
+  background-color: rgba(201, 206, 216, 0.5);
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 10px;
+}
+.friday :hover {
+  background: #fff;
+  border-radius: 50px;
+}
+
+.saturday {
+  background-color: rgba(201, 206, 216, 0.5);
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin: 10px;
+}
+.saturday :hover {
+  background: #fff;
+  border-radius: 50px;
+}
+
+.search {
+  text-align: center;
+}
+
+.searchbutton {
+  background-color: black;
+  border: none;
+  border-radius: 10%;
+  color: #fff;
+}
+
+button :hover {
+  background-color: #424242;
+}
