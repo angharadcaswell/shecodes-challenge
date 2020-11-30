@@ -15,7 +15,7 @@ body {
 
 .currentlocation {
   padding: 20px 20px;
-  background-image: url("/raindrops.png");
+  background-image: url("/src/raindrops.png");
   background-size: 100%;
   border-radius: 20px;
   font-family: "Cantarell", sans-serif;
