@@ -71,7 +71,6 @@ function search(event) {
 // weather API 
 function displayWeather(response){
 document.querySelector("#city-name").innerHTML = response.data.name;
-console.log(response.data);
 let showTemperature = Math.round(response.data.main.temp);
 document.querySelector("#temperature").innerHTML= `${showTemperature} °`;
 document.querySelector("#description").innerHTML= response.data.weather[0].description;
