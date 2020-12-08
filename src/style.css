@@ -32,16 +32,19 @@ li:first-letter {
   max-width: 500px;
   margin: 0 auto;
 }
-.weathertoday {
-  list-style: none;
+
+.weatherDetails {
   margin: 0;
   color: #fff;
   text-align: centre;
   background-color: rgba(201, 206, 216, 0.5);
   border-radius: 50px;
-  padding: 20px 20px;
+  padding: 20px 0px;
   font-weight: bold;
   margin: 20px 0;
+}
+.weathertoday {
+  list-style: none;
 }
 
 .today {
