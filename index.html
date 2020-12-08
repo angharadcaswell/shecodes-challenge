@@ -128,15 +128,23 @@
             </div>
         </div>
 
-    </div>
+
 
     </br>
 
 
     <form class="search" id="search-form">
-        <input type="text" placeholder="Search a city" autofocus="on" autocomplete="off" id="city-input" />
-        <button type="submit" class="searchbutton"><i class="fas fa-search"></i></button>
-        <button class="btn btn-secondary" type="button" id="current-location">Current Location</button>
+        <div class="row">
+            <div class="col-5">
+                <input type="text" placeholder="Search a city" class= "form-control w-100" autofocus="on" autocomplete="off" id="city-input" />
+            </div>
+            <div class="col-3">
+                <input type="submit" value="Search 🔎"  class="btn btn-primary w-100 searchbutton">
+            </div>
+            <div class="col-4">
+                <button class="btn btn-secondary" type="button" id="current-location">Current Location</button>
+            </div>
+        </div>
 </br>
 </br>
         <p>
@@ -147,6 +155,8 @@
     </form>
     </div>
     </div>
+    </div>
+  
     <script src="src/index.js"></script>
 </body>
 

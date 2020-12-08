@@ -134,18 +134,3 @@ p {
   background: #fff;
   border-radius: 50px;
 }
-
-.search {
-  text-align: center;
-}
-
-.searchbutton {
-  background-color: black;
-  border: none;
-  border-radius: 10%;
-  color: #fff;
-}
-
-button :hover {
-  background-color: #424242;
-}
