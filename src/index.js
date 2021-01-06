@@ -34,7 +34,6 @@ let h2 = document.querySelector("#currentDate");
 h2.innerHTML = formatDate();
 
 
-
 // // Change temp conversion
 
 // function convertToFahrenheit(event) {

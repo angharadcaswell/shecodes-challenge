@@ -16,149 +16,155 @@
 
 <body>
     <div class="container">
-        <div class="weather-app">
-      
-        <div class = "fullForecast">
+     
+        <div class="weather-app fullForecast">
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active todayTitle" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+            aria-controls="nav-home" aria-selected="true">
+            
+            Today's Weather</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+            aria-controls="nav-profile" aria-selected="false">Next 5 Days</a>
+  
+    </div>
+</nav>
+<div class="tab-content weatherContent" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
         <div class="currentlocation">
             <div class="row">
-                
                 <div class="col-6">
-                        <span class="country" id="city-name">
-                            Lisbon
-                        </span>
+                    <ul>
+                    <li class="country" id="city-name">
+                        Lisbon
+                    </li>
+                    <li class="date" id="currentDate">
+                                Monday 2nd October
+                    </li>
+                    <li>
+                        <div class="todaytemp">
+                            <span id="temperature"> </span>
+                            <span class="conversion">
+                                <a href="#" id="celcius-link" class="active"> °C </a> |
+                                <a href="#" id="fahrenheit-link"> °F </a>
+                            </span>
                         </div>
+                    </li>
                     
-                            <div class="col-6">
-                                <div >
-                                <ul>
-                                 <li class="today">
-                                 Today
-                                 </li>
-                                  <li class="date" id="currentDate">
-                                    Monday 2nd October
-                                 </li>
-                                </ul>
-                            </div>
-                        
+                    </ul>
                 </div>
+    
+          
+                    <div class="col-6">
+                        <ul class="weathertoday">
+                            <li>
+                                <img src="" alt="Clear" id="icon" />
+                            </li>
+                            <li class="weathertype" id="description"> Mist
+                            </li>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span> km/h</li>
+                            
+                        </ul>
+                    </div>
+                
                 
             </div>
-            <div class="weatherDetails">
-            <div class="row">
-                <div class="col-4">
-                <ul class="weathertoday">
-                <li class="weathertype" id="description">
-                </li>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
-                </div>
-              <div class="col-4">
-                    <div class="todaytemp">
-                        <span id="temperature"> </span>
-                        <span class="conversion">
-                            <a href="#" id="celcius-link" class= "active"> °C </a> |
-                            <a href="#" id="fahrenheit-link"> °F </a>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-4">
-                <img src="" alt="Clear" id="icon" />
-              </div>
-            </div>
-            </div>
-            
-            
-
-        </br>
-        <div class="next5days">
-            <div class="tuesday">
-                <div class="row">
-                    <div class="col-4">
-                        Tuesday
-                    </div>
-                    <div class="col-4">
-                        22°C
-                    </div>
-                    <div class="col-4">
-                        <i class="fas fa-sun"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wednesday">
-                <div class="row">
-                    <div class="col-4">
-                        Wednesday
-                    </div>
-                    <div class="col-4">
-                        15°C
-                    </div>
-                    <div class="col-4">
-                        <i class="fas fa-cloud-rain"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="thursday">
-                <div class="row">
-                    <div class="col-4">
-                        Thursday
-                    </div>
-                    <div class="col-4">
-                        -1°C
-                    </div>
-                    <div class="col-4">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="friday">
-                <div class="row">
-                    <div class="col-4">
-                        Friday
-                    </div>
-                    <div class="col-4">
-                        6°C
-                    </div>
-                    <div class="col-4">
-                        <i class="fas fa-cloud-sun"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="saturday">
-                <div class="row">
-                    <div class="col-4">
-                        Saturday
-                    </div>
-                    <div class="col-4">
-                        5°C
-                    </div>
-                    <div class="col-4">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                </div>
-            </div>
         </div>
-        </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="next5days">
+                    <div class="tuesday">
+                        <div class="row">
+                            <div class="col-4">
+                                Tuesday
+                            </div>
+                            <div class="col-4">
+                                22°C
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="wednesday">
+                        <div class="row">
+                            <div class="col-4">
+                                Wednesday
+                            </div>
+                            <div class="col-4">
+                                15°C
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-cloud-rain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thursday">
+                        <div class="row">
+                            <div class="col-4">
+                                Thursday
+                            </div>
+                            <div class="col-4">
+                                -1°C
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-snowflake"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friday">
+                        <div class="row">
+                            <div class="col-4">
+                                Friday
+                            </div>
+                            <div class="col-4">
+                                6°C
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="saturday">
+                        <div class="row">
+                            <div class="col-4">
+                                Saturday
+                            </div>
+                            <div class="col-4">
+                                5°C
+                            </div>
+                            <div class="col-4">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+ 
+</div>
+      
+        
         </div>
 
     </br>
 
-
-    <form  id="search-form" class="search mb-3">
-        <div class="row">
+    <form  id="search-form" class="search mb-3 ">
+        <div class="row ">
             <div class="col-6">
-                <input type="text" placeholder="Search a city" class= "form-control w-100" autofocus="on" autocomplete="off" id="city-input" />
+                <input type="text" placeholder="Search a city" class= "form-control " autofocus="on" autocomplete="off" id="city-input" />
             </div>
             <div class="col-3">
-                <input type="submit" value="🔎"  class="btn btn-info w-10 searchbutton">
+                <input type="submit" value="🔎"  class="btn btn-info  searchbutton">
             </div>
             <div class="col-3">
-                <button class="btn btn-info w-10" type="button" id="current-location">⌖</button>
+                <button class="btn btn-info " type="button" id="current-location">⌖</button>
             </div>
         </div>
 </br>
 </br>
+
         <p>
             <a href="https://github.com/angharadcaswell/shecodes-challenge" target="_blank"> 
             Open-source code </a> 
@@ -167,9 +173,22 @@
     </form>
     
     </div>
+
+
     </div>
   
     <script src="src/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
+
+
