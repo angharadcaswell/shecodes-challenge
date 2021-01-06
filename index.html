@@ -17,56 +17,60 @@
 <body>
     <div class="container">
         <div class="weather-app">
-        <div class="title">
-            <h1>
-                Your Weather
-            </h1>
-        </div>
-        </br>
+      
+        <div class = "fullForecast">
         <div class="currentlocation">
             <div class="row">
-                <div class="col-6">   
-                        <div class="todaytemp">
-                            <span id="temperature">
-                                18°
-                            </span>
-                            <span class="conversion" id="conversion"><a href="#" id="celcius-link"> C </a> |
-                                <a href="#" id="fahrenheit-link"> F </a>
-                            </span>
-                        </div>
-                </div>
+                
                 <div class="col-6">
                         <span class="country" id="city-name">
                             Lisbon
                         </span>
+                        </div>
+                    
+                            <div class="col-6">
+                                <div >
+                                <ul>
+                                 <li class="today">
+                                 Today
+                                 </li>
+                                  <li class="date" id="currentDate">
+                                    Monday 2nd October
+                                 </li>
+                                </ul>
+                            </div>
+                        
                 </div>
                 
             </div>
             <div class="weatherDetails">
             <div class="row">
-                <div class="col-6">
+                <div class="col-4">
                 <ul class="weathertoday">
-            
-                <l1 class="today">
-                    Today
-                </l1>
-                <li class="date" id="currentDate">
-                    Monday 2nd October
-                </li>
                 <li class="weathertype" id="description">
-            
                 </li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
                 </ul>
                 </div>
-              <div class="col-6">
-                    <img src="" alt="Clear" id="icon" />
+              <div class="col-4">
+                    <div class="todaytemp">
+                        <span id="temperature"> </span>
+                        <span class="conversion">
+                            <a href="#" id="celcius-link" class= "active"> °C </a> |
+                            <a href="#" id="fahrenheit-link"> °F </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4">
+                <img src="" alt="Clear" id="icon" />
               </div>
             </div>
             </div>
             
             
 
-        </br></br>
+        </br>
         <div class="next5days">
             <div class="tuesday">
                 <div class="row">
@@ -135,20 +139,21 @@
                 </div>
             </div>
         </div>
-
-
+        </div>
+        </div>
 
     </br>
 
 
-    <form class="search mb-3" id="search-form">
+    <form  id="search-form" class="search mb-3">
         <div class="row">
             <div class="col-6">
                 <input type="text" placeholder="Search a city" class= "form-control w-100" autofocus="on" autocomplete="off" id="city-input" />
             </div>
             <div class="col-3">
                 <input type="submit" value="🔎"  class="btn btn-info w-10 searchbutton">
-            </div><div class="col-3">
+            </div>
+            <div class="col-3">
                 <button class="btn btn-info w-10" type="button" id="current-location">⌖</button>
             </div>
         </div>
@@ -160,7 +165,7 @@
             by Angharad Caswell
         </p>
     </form>
-    </div>
+    
     </div>
     </div>
   
