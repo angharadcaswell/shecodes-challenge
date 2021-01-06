@@ -75,6 +75,8 @@ document.querySelector("#city-name").innerHTML = response.data.name;
 let showTemperature = Math.round(celsiusTemperature);
 document.querySelector("#temperature").innerHTML= `${showTemperature} `;
 document.querySelector("#description").innerHTML= response.data.weather[0].description;
+document.querySelector("#humidity").innerHTML =response.data.main.humidity;
+document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed);
 let iconElement = document.querySelector("#icon");
  iconElement.setAttribute(
     "src",
