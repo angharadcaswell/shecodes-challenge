@@ -122,27 +122,11 @@ ul {
   margin: 10px;
 }
 
-.tuesday:hover {
-  background: #fff;
-  border-radius: 50px;
-}
-
-.wednesday :hover {
-  background: #fff;
-  border-radius: 50px;
-}
-
-.thursday :hover {
-  background: #fff;
-  border-radius: 50px;
-}
-
-.friday :hover {
-  background: #fff;
-  border-radius: 50px;
-}
-
-.saturday :hover {
+.tuesday:hover,
+.wednesday:hover,
+.thursday:hover,
+.friday:hover,
+.saturday:hover {
   background: #fff;
   border-radius: 50px;
 }
