@@ -35,6 +35,7 @@ ul {
 .weatherContent {
   background-color: #74ebd5;
   margin: 10px;
+  padding: 20px;
 }
 
 .conversion {
@@ -55,6 +56,7 @@ ul {
 
 .date {
   font-size: 15px;
+  padding: 0px 0px 0px 0px;
 }
 
 .country,
@@ -63,9 +65,15 @@ ul {
   font-weight: bold;
   color: #424242;
   text-align: left;
+  padding: 15px 0px 0px 0px;
 }
 
-.next5days {
+.weathertoday {
+  padding: 20px;
+}
+
+.next5days,
+.nextHours {
   color: #424242;
   text-align: center;
   max-width: 500px;
@@ -73,22 +81,14 @@ ul {
   padding: 10px;
 }
 
-.tuesday,
-.wednesday,
-.thursday,
-.friday,
-.saturday {
+.forecastRow {
   background-color: rgb(159, 172, 230, 0.6);
   border-radius: 20px;
   padding: 5px 5px;
   margin: 10px;
 }
 
-.tuesday:hover,
-.wednesday:hover,
-.thursday:hover,
-.friday:hover,
-.saturday:hover {
+.forecastRow:hover {
   background: #fff;
   border-radius: 50px;
 }

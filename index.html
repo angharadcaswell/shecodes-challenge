@@ -24,9 +24,12 @@
             aria-controls="nav-home" aria-selected="true">
             
             Today's Weather</a>
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+
+                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-hours" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">3 Hour Forecast</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-days" role="tab"
             aria-controls="nav-profile" aria-selected="false">Next 5 Days</a>
-  
+
     </div>
 </nav>
 <div class="tab-content weatherContent" id="nav-tabContent">
@@ -72,15 +75,85 @@
             </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                <div class="next5days">
+    <div class="tab-pane fade nextHours" id="nav-hours" role="tabpanel" aria-labelledby="nav-profile-tab">
+        
+            <div class="12:00">
+                <div class="row forecastRow">
+                    <div class="col-4">
+                        12:00
+                    </div>
+                    <div class="col-4">
+                        <strong>25</strong> 22°C
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="15:00">
+                <div class="row forecastRow">
+                    <div class="col-4">
+                        15:00
+                    </div>
+                    <div class="col-4">
+                        <strong>25</strong> 15°C
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-cloud-rain"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="18:00">
+                <div class="row forecastRow">
+                    <div class="col-4">
+                        18:00
+                    </div>
+                    <div class="col-4">
+                        <strong>25</strong> -1°C
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="21:00">
+                <div class="row forecastRow">
+                    <div class="col-4">
+                        21:00
+                    </div>
+                    <div class="col-4">
+                        <strong>25</strong> 6°C
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="00:00">
+                <div class="row forecastRow">
+                    <div class="col-4">
+                        00:00
+                    </div>
+                    <div class="col-4">
+                        <strong>25</strong> 5°C
+                    </div>
+                    <div class="col-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    <div class="tab-pane fade next5days" id="nav-days" role="tabpanel" aria-labelledby="nav-profile-tab">
+             
                     <div class="tuesday">
-                        <div class="row">
+                        <div class="row forecastRow">
                             <div class="col-4">
                                 Tuesday
                             </div>
                             <div class="col-4">
-                                22°C
+                                <strong>25</strong> 22°C
                             </div>
                             <div class="col-4">
                                 <i class="fas fa-sun"></i>
@@ -89,12 +162,12 @@
                     </div>
                 
                     <div class="wednesday">
-                        <div class="row">
+                        <div class="row forecastRow">
                             <div class="col-4">
                                 Wednesday
                             </div>
                             <div class="col-4">
-                                15°C
+                                <strong>25</strong> 15°C
                             </div>
                             <div class="col-4">
                                 <i class="fas fa-cloud-rain"></i>
@@ -102,12 +175,12 @@
                         </div>
                     </div>
                     <div class="thursday">
-                        <div class="row">
+                        <div class="row forecastRow">
                             <div class="col-4">
                                 Thursday
                             </div>
                             <div class="col-4">
-                                -1°C
+                                <strong>25</strong> -1°C
                             </div>
                             <div class="col-4">
                                 <i class="fas fa-snowflake"></i>
@@ -115,12 +188,12 @@
                         </div>
                     </div>
                     <div class="friday">
-                        <div class="row">
+                        <div class="row forecastRow">
                             <div class="col-4">
                                 Friday
                             </div>
                             <div class="col-4">
-                                6°C
+                                <strong>25</strong> 6°C
                             </div>
                             <div class="col-4">
                                 <i class="fas fa-cloud-sun"></i>
@@ -128,19 +201,19 @@
                         </div>
                     </div>
                     <div class="saturday">
-                        <div class="row">
+                        <div class="row forecastRow">
                             <div class="col-4">
                                 Saturday
                             </div>
                             <div class="col-4">
-                                5°C
+                                <strong>25</strong> 5°C
                             </div>
                             <div class="col-4">
                                 <i class="fas fa-bolt"></i>
                             </div>
                         </div>
                     </div>
-                </div>
+               
     </div>
  
 </div>

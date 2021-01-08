@@ -84,6 +84,10 @@ let iconElement = document.querySelector("#icon");
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function displayForecast (response) {
+  console.log( response.data);
+}
+
 
 function submitCity(event){
 event.preventDefault();
@@ -91,6 +95,9 @@ let city = document.querySelector("#city-input").value;
 let apiKey = "db87e0d32b4169f744dbe24ac4293afa";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayWeather);
+
+apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(dispalyForecast);
 }
 
 let searchCity = document.querySelector("#search-form");
