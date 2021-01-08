@@ -1,3 +1,7 @@
+b {
+  font-weight: bold;
+}
+
 body {
   background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 }
@@ -13,6 +17,13 @@ li:first-letter {
 }
 ul {
   list-style: none;
+}
+
+.nextHours img {
+  display: block;
+  margin: 0 auto;
+  height: 48px;
+  width: 48px;
 }
 
 .fullForecast {
@@ -59,9 +70,16 @@ ul {
   padding: 0px 0px 0px 0px;
 }
 
+.todaytemp {
+  font-size: 60px;
+}
+
+.country {
+  font-size: 50px;
+}
+
 .country,
 .todaytemp {
-  font-size: 50px;
   font-weight: bold;
   color: #424242;
   text-align: left;
@@ -77,15 +95,14 @@ ul {
   color: #424242;
   text-align: center;
   max-width: 500px;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 .forecastRow {
   background-color: rgb(159, 172, 230, 0.6);
   border-radius: 20px;
   padding: 5px 5px;
-  margin: 10px;
+  margin: 10px 10px;
+  text-align: center;
 }
 
 .forecastRow:hover {
