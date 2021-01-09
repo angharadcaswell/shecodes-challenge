@@ -91,7 +91,7 @@ function displayForecast (response) {
                       ${formatHours(forecast.dt*1000)}
                     </div>
                     <div class="col-4">
-                        <b>${Math.round(forecast.main.temp_max)}°</b> / ${Math.round(forecast.main.temp_min)}°C
+                        <strong>${Math.round(forecast.main.temp_max)}°</strong> / ${Math.round(forecast.main.temp_min)}°C
                     </div>
                     <div class="col-4">
                         <img

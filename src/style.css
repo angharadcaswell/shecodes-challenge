@@ -1,7 +1,3 @@
-b {
-  font-weight: bold;
-}
-
 body {
   background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
 }
@@ -19,6 +15,9 @@ ul {
   list-style: none;
 }
 
+.forecastRow b {
+  font-weight: bold;
+}
 .nextHours img {
   display: block;
   margin: 0 auto;
@@ -82,8 +81,9 @@ ul {
 .todaytemp {
   font-weight: bold;
   color: #424242;
-  text-align: left;
+  text-align: center;
   padding: 15px 0px 0px 0px;
+  vertical-align: middle;
 }
 
 .weathertoday {
