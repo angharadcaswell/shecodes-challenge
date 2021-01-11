@@ -29,8 +29,6 @@
                         Today's Weather</a>
                     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-hours" role="tab"
                         aria-controls="nav-profile" aria-selected="false">Next 18 hours</a>
-                    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-days" role="tab"
-                        aria-controls="nav-profile" aria-selected="false">Next 5 Days</a>
                 </div>
             </nav>
             <div class="tab-content weatherContent" id="nav-tabContent">
@@ -70,59 +68,13 @@
                 <div class="tab-pane fade nextHours" id="nav-hours" role="tabpanel" aria-labelledby="nav-profile-tab">
                     <div class="weather-forecast-temperature" id="forecast"></div>
                 </div>
-                <div class="tab-pane fade next5days" id="nav-days" role="tabpanel" aria-labelledby="nav-profile-tab">
-                    <div class="tuesday">
-                        <div class="row forecastRow">
-                            <div class="col-4">Tuesday</div>
-                            <div class="col-4"><strong>25</strong> 22°C</div>
-                            <div class="col-4">
-                                <i class="fas fa-sun"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wednesday">
-                        <div class="row forecastRow">
-                            <div class="col-4">Wednesday</div>
-                            <div class="col-4"><strong>25</strong> 15°C</div>
-                            <div class="col-4">
-                                <i class="fas fa-cloud-rain"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thursday">
-                        <div class="row forecastRow">
-                            <div class="col-4">Thursday</div>
-                            <div class="col-4"><strong>25</strong> -1°C</div>
-                            <div class="col-4">
-                                <i class="fas fa-snowflake"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="friday">
-                        <div class="row forecastRow">
-                            <div class="col-4">Friday</div>
-                            <div class="col-4"><strong>25</strong> 6°C</div>
-                            <div class="col-4">
-                                <i class="fas fa-cloud-sun"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="saturday">
-                        <div class="row forecastRow">
-                            <div class="col-4">Saturday</div>
-                            <div class="col-4"><strong>25</strong> 5°C</div>
-                            <div class="col-4">
-                                <i class="fas fa-bolt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <br />
         <form id="search-form" class="search mb-3">
             <div class="row text-center">
-                <div class="offset-2 col-6">
+                <div class="offset-2 col-4">
                     <input type="text" placeholder="Search a city" class="form-control" autofocus="on"
                         autocomplete="off" id="city-input" />
                 </div>
