@@ -128,13 +128,15 @@ searchCity.addEventListener("submit", submitCity);
 //Current location
 
 function locationFinder(position) {
-  let lat = `${position.coords.latitude}`;
-  let lon = `${position.coords.longitude}`;
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
   let apiKey = "db87e0d32b4169f744dbe24ac4293afa";
   let apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
-
+apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
+
 
 function findCurrentLocation(event) {
   event.preventDefault();
