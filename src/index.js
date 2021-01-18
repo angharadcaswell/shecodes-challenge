@@ -72,7 +72,7 @@ document.querySelector("#wind").innerHTML = Math.round(response.data.wind.speed)
 let iconElement = document.querySelector("#icon");
  iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
@@ -95,7 +95,7 @@ function displayForecast (response) {
                     </div>
                     <div class="col-4">
                         <img
-        src="http://openweathermap.org/img/wn/${
+        src="https://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"
       />
@@ -131,7 +131,7 @@ function locationFinder(position) {
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
   let apiKey = "db87e0d32b4169f744dbe24ac4293afa";
-  let apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
